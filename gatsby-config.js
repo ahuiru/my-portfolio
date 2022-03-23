@@ -7,44 +7,65 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-emilia-core/gatsby-config.js
-    siteTitle: `Emilia`,
+    siteTitle: `ahuiru's Portfolio`,
     siteTitleAlt: `ahuiru's Portfolio`,
     siteHeadline: `Emilia - Gatsby Theme from @lekoarts`,
     siteUrl: `https://emilia.lekoarts.de`,
-    siteDescription: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.`,
-    siteLanguage: `en`,
+    siteDescription: `This is ahuiru's portfolio site. We will update it from time to time, so please look forward to it.`,
+    siteLanguage: `ja`,
     siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
+    author: `Ahuiru`,
+    name: 'Ahuiru',
+    social: [
+      {
+        name: "twitter",
+        url: "https://twitter.com/Afe_afe_crypto",
+      },
+      {
+        name: "github",
+        url: "https://github.com/ahuiru",
+      },
+    ],
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-emilia`,
       // See the theme's README for all available options
-      options: {},
+      options: {
+        name: `Ahuiru`,
+        location: 'Tokyo',
+        socialMedia: [
+          {
+             title: `Twitter`,
+             href: "https://twitter.com/Afe_afe_crypto"
+          },
+          {
+            title: `Github`,
+            href: `https://github.com/ahuiru`
+          },
+        ],
+        showThemeAuthor: false,
+      },
     },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Emilia - @lekoarts/gatsby-theme-emilia`,
-        short_name: `Emilia`,
-        description: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI.`,
+        name: `Ahuiru`,
+        short_name: `Ahuiru`,
+        description: `This is ahuiru's portfolio site. We will update it from time to time, so please look forward to it.`,
         start_url: `/`,
-        background_color: `#fff`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#3182ce`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
         display: `standalone`,
         icons: [
           {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
+            src: `static/favicon.ico`,
+            type: `image/ico`,
           },
           {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
+            src: `static/icon.jpeg`,
+            type: `image/jpeg`,
           },
         ],
       },
