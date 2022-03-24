@@ -60,11 +60,11 @@ module.exports = {
         display: `standalone`,
         icons: [
           {
-            src: `static/favicon.ico`,
+            src: `content/assets/favicon.ico`,
             type: `image/ico`,
           },
           {
-            src: `static/icon.jpeg`,
+            src: `content/assets/icon.jpeg`,
             type: `image/jpeg`,
           },
         ],
