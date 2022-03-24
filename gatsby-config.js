@@ -55,19 +55,10 @@ module.exports = {
         short_name: `Ahuiru`,
         description: `This is ahuiru's portfolio site. We will update it from time to time, so please look forward to it.`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
+        background_color: `#4665f0`,
+        theme_color: `#4687f0`,
         display: `standalone`,
-        icons: [
-          {
-            src: `content/assets/favicon.ico`,
-            type: `image/ico`,
-          },
-          {
-            src: `content/assets/icon.jpeg`,
-            type: `image/jpeg`,
-          },
-        ],
+        icon: `content/assets/icon.jpeg`,
       },
     },
     `gatsby-plugin-gatsby-cloud`,
