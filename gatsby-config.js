@@ -18,10 +18,6 @@ module.exports = {
     name: 'Ahuiru',
     social: [
       {
-        name: "twitter",
-        url: "https://twitter.com/Afe_afe_crypto",
-      },
-      {
         name: "github",
         url: "https://github.com/ahuiru",
       },
@@ -35,10 +31,6 @@ module.exports = {
         name: `Ahuiru`,
         location: 'Tokyo',
         socialMedia: [
-          {
-             title: `Twitter`,
-             href: "https://twitter.com/Afe_afe_crypto"
-          },
           {
             title: `Github`,
             href: `https://github.com/ahuiru`
